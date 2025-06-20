@@ -1,0 +1,14 @@
+@import './shared/colors.css';
+@import './shared/fonts.css';
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+    color: var(--primary-text-color);
+}
+
+* img {
+  user-select: none;
+}

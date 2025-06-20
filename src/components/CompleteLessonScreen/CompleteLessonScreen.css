@@ -1,0 +1,150 @@
+.complete-lesson-screen {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  text-align: center;
+  padding: 20px;
+  background: linear-gradient(to top, var(--transparant-orange-color), transparent);
+}
+
+.home-btn {
+  margin-top: 40px;
+  padding: 10px 24px;
+  background: var(--primary-color);
+  color: var(--white-color);
+  box-shadow: 0px 5px 0px var(--primary-shadow-color);
+  font-weight: bold;
+  font-size: 18px;
+  border: 0px;
+  border-radius: 12px;
+  transition: all 0.2s ease;
+}
+
+.home-btn:hover {
+  background: var(--primary-bright-color);
+  box-shadow: 0px 5px 0px var(--primary-bright-shadow-color);
+  transform: translateY(1px);
+}
+
+.home-btn:active {
+  background-color: var(--primary-bright-color);
+  box-shadow: 0 0 0;
+  transform: translateY(5px);
+}
+
+.mascot-and-text-wrapper {
+  position: relative;
+  width: 100%;
+  max-width: 400px;
+  margin: 0 auto 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.circus-rays-background {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  max-width: 400px;
+  aspect-ratio: 1 / 1;
+  border-radius: 50%;
+  background: repeating-conic-gradient(
+    var(--primary-bright-color) 0deg 15deg,
+    var(--transparant-orange-color) 15deg 30deg
+  );
+  animation: rotate-rays 10s linear infinite;
+  z-index: 0;
+}
+
+@keyframes rotate-rays {
+  from {
+    transform: translateX(-50%) rotate(0deg);
+  }
+  to {
+    transform: translateX(-50%) rotate(360deg);
+  }
+}
+
+.mascot-on-box {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.jumping-mascot {
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+  z-index: 2;
+}
+
+.congrats-box {
+  background: var(--white-color);
+  border: 3px solid var(--gray-color);
+  border-radius: 16px;
+  padding: 24px;
+  width: 100%;
+  max-width: 400px;
+  text-align: center;
+  position: relative;
+  z-index: 2;
+  margin-top: 0;
+}
+
+.congrats-message {
+  font-size: 22px;
+  font-weight: bold;
+  color: var(--primary-text-color);
+  margin: 0;
+}
+
+@media (max-width: 480px) {
+  .jumping-mascot {
+    max-width: 250px;
+  }
+
+  .circus-rays-background {
+    max-width: 250px;
+  }
+
+  .congrats-box {
+    padding: 18px;
+  }
+
+  .congrats-message {
+    font-size: 18px;
+  }
+
+  .home-btn {
+    font-size: 16px;
+    padding: 8px 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .jumping-mascot {
+    max-width: 300px;
+  }
+
+  .circus-rays-background {
+    max-width: 300px;
+  }
+
+  .congrats-box {
+    padding: 20px;
+  }
+
+  .congrats-message {
+    font-size: 20px;
+  }
+
+  .home-btn {
+    font-size: 17px;
+  }
+}

@@ -1,0 +1,59 @@
+@import '../../../shared/colors.css';
+
+.privacy-container {
+  max-width: 700px;
+  margin: 40px auto;
+  padding: 20px;
+  background: var(--light-gray-color);
+  border-radius: 16px;
+  border: 2px solid var(--primary-bright-color);
+  color: var(--primary-text-color);
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+.privacy-container h1 {
+  margin-bottom: 25px;
+  padding-bottom: 25px;
+  text-align: center;
+  font-weight: bold;
+  font-size: 28px;
+  border-bottom: 2px solid var(--dark-gray-color);
+}
+
+.privacy-container h2 {
+  font-size: 20px;
+  font-weight: bold;
+  margin-top: 24px;
+  margin-bottom: 10px;
+}
+
+.privacy-container p {
+  margin-bottom: 12px;
+}
+
+.privacy-container ul {
+  list-style-type: disc;
+  padding-left: 20px;
+  margin: 10px 0 20px 0;
+}
+
+.privacy-container li {
+  margin-bottom: 6px;
+}
+
+@media (max-width: 767px) {
+  .privacy-container {
+    margin: 20px 16px;
+    padding: 16px;
+    font-size: 15px;
+  }
+
+  .privacy-container h1 {
+    font-size: 22px;
+  }
+
+  .privacy-container h2 {
+    font-size: 18px;
+  }
+}

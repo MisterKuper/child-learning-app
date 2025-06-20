@@ -1,0 +1,49 @@
+@import '../../../shared/colors.css';
+
+.terms-container {
+  max-width: 700px;
+  margin: 40px auto;
+  padding: 20px;
+  background: var(--light-gray-color);
+  border-radius: 16px;
+  border: 2px solid var(--primary-bright-color);
+  color: var(--primary-text-color);
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+.terms-container h1 {
+  margin-bottom: 25px;
+  padding-bottom: 25px;
+  text-align: center;
+  font-weight: bold;
+  font-size: 28px;
+  border-bottom: 2px solid var(--dark-gray-color);
+}
+
+.terms-container h2 {
+  font-size: 20px;
+  font-weight: bold;
+  margin-top: 24px;
+  margin-bottom: 10px;
+}
+
+.terms-container p {
+  margin-bottom: 12px;
+}
+
+@media (max-width: 767px) {
+  .terms-container {
+    margin: 20px 16px;
+    padding: 16px;
+    font-size: 15px;
+  }
+
+  .terms-container h1 {
+    font-size: 22px;
+  }
+
+  .terms-container h2 {
+    font-size: 18px;
+  }
+}

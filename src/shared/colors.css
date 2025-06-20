@@ -1,0 +1,49 @@
+:root {
+    --primary-color: #FFAA21;
+    --primary-color-transparent: rgba(255, 170, 33, 0.15);
+    --primary-shadow-color: #D08000;
+    --primary-bright-color: #ffb922;
+    --primary-bright-shadow-color: #f8a013;
+    --transparant-orange-color: #fff4e3;
+    --primary-text-color: #4b4b4b;
+    --black-color: #000;
+    --gray-color: #E5E5E5;
+    --gray-color-transparent: rgba(0, 0, 0, 0.1);
+    --light-gray-color: #f5f5f5;
+    --dark-gray-color: #cacaca;
+    --policy-text-color: #a8a8a8;
+    --dark-policy-text-color: #8f8f8f;
+    --blue-color: #1CA4FF;
+    --white-color: #fff;
+    --error-color: #b41313;
+    --bright-brown-color: #726760;
+
+    --feedback-correct-bg-color: #D7FFB8;
+    --feedback-correct-btn-color: #58CC02;
+    --feedback-correct-btn-shadow-color: #58A700;
+    --feedback-correct-btn-bright-color: #79D635;
+    --feedback-correct-btn-bright-shadow-color: #63b901;
+
+    --feedback-incorrect-bg-color: #FFDFE0;
+    --feedback-incorrect-btn-color: #FF4B4B;
+    --feedback-incorrect-btn-shadow-color: #EA2B2B;
+    --feedback-incorrect-btn-bright-color: #ff6161;
+    --feedback-incorrect-btn-bright-shadow-color: #fa4141;
+
+    --orange-color: #FFAA21;
+    --orange-shadow-color: #D08000;
+    --red-color: #EC3B35;
+    --red-shadow-color: #c9211b;
+    --bright-blue-color: #18C0EF;
+    --bright-blue-shadow-color: #00a1ce;
+    --green-color: #80DE37;
+    --green-shadow-color: #61bd1b;
+    --yellow-color: #FBDC30;
+    --yellow-shadow-color: #d3b509;
+    --pink-color: #F6448B;
+    --pink-shadow-color: #cc1a61;
+    --violet-color: #D044FF;
+    --violet-shadow-color: #a817d8;
+    --purple-color: #4E48FF;
+    --purple-shadow-color: #1f19d3;
+}

@@ -1,0 +1,508 @@
+@import '../../shared/colors.css';
+
+.welcome-page {
+    display: flex;
+    flex-direction: column;
+}
+
+.header {
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.top-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.top-section .logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 0;
+    width: 100%;
+    background-color: var(--primary-color);
+    color: var(--white-color);
+    font-size: 24px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    text-decoration: none;
+    color: var(--primary-text-color);
+}
+
+.bottom-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 100px;
+    gap: 20px;
+    position: relative;
+}
+
+.image-frame {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.header-image-front {
+    height: auto;
+    z-index: 3;
+}
+
+.header-image-middle {
+    position: absolute;
+    height: auto;
+    z-index: 2;
+}
+
+.header-image-back {
+    position: absolute;
+    height: auto;
+    z-index: 1;
+}
+
+.buttons-column {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.register-button,
+.login-button {
+    background-color: var(--primary-color);
+    box-shadow: 0px 6px 0px var(--primary-shadow-color);
+    color: var(--white-color);
+    font-size: 18px;
+    font-weight: bold;
+    padding: 20px;
+    width: 250px;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.login-button {
+    background-color: var(--white-color);
+    box-shadow: 0px 5px 0px var(--gray-color);
+    color: var(--primary-color);
+    border: 2px solid var(--gray-color);
+}
+
+.register-button:hover {
+    background-color: var(--primary-bright-color);
+    box-shadow: 0px 5px 0px var(--primary-bright-shadow-color);
+    transform: translateY(1px);
+}
+
+.register-button:active {
+    background-color: var(--primary-bright-color);
+    box-shadow: 0 0 0;
+    transform: translateY(5px);
+}
+
+.login-button:hover {
+    background-color: var(--gray-color);
+    box-shadow: 0px 5px 0px var(--dark-gray-color);
+    border: 2px solid var(--dark-gray-color);
+    transform: translateY(1px);
+}
+
+.login-button:active {
+    background-color: var(--gray-color);
+    box-shadow: 0 0 0;
+    border: 2px solid var(--dark-gray-color);
+    transform: translateY(5px);
+}
+
+.header-image-front-right,
+.header-image-front-left {
+    height: auto;
+    z-index: 3;
+}
+
+.header-image-middle-right,
+.header-image-middle-left {
+    position: absolute;
+    height: auto;
+    z-index: 2;
+}
+
+.header-image-back-right,
+.header-image-back-left {
+    position: absolute;
+    height: auto;
+    z-index: 1;
+}
+
+.login-main {
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+}
+
+.introdaction-block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0 20px;
+}
+
+.introdaction-block h1 span {
+    color: var(--primary-color);
+    font-weight: bold;
+}
+
+.login-main-description {
+    font-size: 18px;
+    text-align: justify;
+}
+
+.introdaction-block .login-main-description span {
+    color: var(--primary-color);
+    font-weight: bold;
+}
+
+.top-list,
+.bottom-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+    margin-bottom: 100px;
+}
+
+.top-list ul li::marker,
+.bottom-list ul li::marker {
+    color: var(--primary-color);
+    font-size: 20px;
+}
+
+.login-main-benefits,
+.login-main-games {
+    padding: 10px 10px 10px 30px;
+    background-color: var(--primary-color-transparent);
+    border: 3px solid var(--primary-color);
+    border-radius: 20px;
+    width: 80%;
+    font-weight: bold;
+    line-height: calc(150% + 5px);
+}
+
+.image-frame-left,
+.image-frame-right {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.login-main-subtitle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 22px;
+}
+
+.call-to-action-block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.login-main-call-to-action {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 20px;
+    font-size: 22px;
+    text-align: center;
+}
+
+.call-to-action-block .register-button {
+    margin-top: 50px;
+}
+
+.animated-container {
+  display: flex;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+}
+
+.bubbles-row {
+  position: absolute;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 1;
+}
+
+.bubbles-row.front {
+  z-index: 2;
+}
+
+.bubbles-row.back {
+  z-index: 0;
+}
+
+.bubbles-bg {
+  width: auto;
+  height: 100%;
+  flex-shrink: 0;
+}
+
+
+.mascot-container {
+    position: relative;
+    z-index: 2;
+    height: auto;
+}
+
+.mascot-image {
+    display: flex;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--primary-color);
+    color: var(--white-color);
+    padding-top: 120px;
+    padding-bottom: 20px;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.left-section {
+    flex: 1;
+}
+
+.autor {
+    margin-top: 20px;
+}
+
+.right-section {
+    flex: 1;
+    margin-bottom: 70px;
+}
+
+.text {
+    color: var(--white-color);
+}
+
+.link {
+    color: var(--white-color);
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+.link:hover {
+    font-weight: bold;
+}
+
+@media (min-width: 1024px) {
+    /* header part */
+    .top-section {
+        margin-bottom: 150px;
+    }
+
+    .bottom-section {
+        flex-direction: row;
+        justify-content: space-evenly;
+        gap: 20px;
+    }
+
+    .top-list, 
+    .bottom-list {
+        flex-direction: row;
+        justify-content: space-evenly;
+        gap: 40px;
+        margin: 0 40px;
+    }
+
+    .header-image-front {
+        width: 35vw;
+    }
+
+    .header-image-middle {
+        width: 40vw;
+    }
+
+    .header-image-back {
+        width: 50vw;
+    }
+
+    .header-image-front-right,
+    .header-image-front-left,
+    .header-image-middle-right,
+    .header-image-middle-left,
+    .header-image-back-right,
+    .header-image-back-left {
+        width: 40vw;
+    }
+
+    .login-main-benefits,
+    .login-main-games {
+        width: 70%;
+    }
+
+    .login-main-call-to-action {
+        margin-top: 60px;
+    }
+
+    .bbubbles-bg {
+        width: 50vw;
+    }
+
+    .mascot-container {
+        width: 45vw;
+    }
+
+    .container {
+        gap: 40px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+
+    /* header part */
+    .top-section {
+        margin-bottom: 130px;
+    }
+
+    .bottom-section {
+        gap: 50px;
+    }
+
+    .header-image-front {
+        width: 35vw;
+    }
+
+    .header-image-middle {
+        width: 45vw;
+    }
+
+    .header-image-back {
+        width: 60vw;
+    }
+
+    .buttons-column {
+        margin-top: 120px;
+    }
+
+    .header-image-front-right,
+    .header-image-front-left,
+    .header-image-middle-right,
+    .header-image-middle-left,
+    .header-image-back-right,
+    .header-image-back-left {
+        width: 50vw;
+    }
+
+    .bottom-list {
+        flex-direction: column-reverse;
+    }
+
+    .login-main-benefits,
+    .login-main-games {
+        width: 70%;
+    }
+
+    .bubbles-bg {
+        width: 50vw;
+    }
+
+    .mascot-container {
+        width: 50vw;
+    }
+
+    .container {
+        flex-direction: column-reverse;
+    }
+}
+
+@media (max-width: 767px) {
+
+    /* header part */
+    .top-section {
+        margin-bottom: 70px;
+    }
+
+    .bottom-section {
+        gap: 20px;
+    }
+
+    .header-image-front {
+        width: 65vw;
+    }
+
+    .header-image-middle {
+        width: 75vw;
+    }
+
+    .header-image-back {
+        width: 95vw;
+    }
+
+    .buttons-column {
+        margin-top: 100px;
+    }
+
+    .header-image-front-right,
+    .header-image-front-left,
+    .header-image-middle-right,
+    .header-image-middle-left,
+    .header-image-back-right,
+    .header-image-back-left {
+        width: 90vw;
+    }
+
+    .bottom-list {
+        flex-direction: column-reverse;
+    }
+
+    .login-main-benefits,
+    .login-main-games {
+        width: 80%;
+    }
+
+    .bubbles-bg {
+        width: 80vw;
+    }
+
+    .mascot-container {
+        width: 80vw;
+    }
+
+    .container {
+        flex-direction: column-reverse;
+    }
+}
